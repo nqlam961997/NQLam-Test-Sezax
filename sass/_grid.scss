@@ -1,0 +1,32 @@
+.row{
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+        @media only screen and (max-width: 56.25em){
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include clearFix;
+
+    [class^="col-"]{
+        float: left;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+
+            @media only screen and (max-width: 56.25em){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+        @media only screen and (max-width: 56.25em){
+            width: 100% !important;
+        }
+    }
+
+    .col-1-of-3{
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+}

@@ -1,0 +1,46 @@
+.card{
+    position: relative;
+    height: 40rem;
+    background-color: $color-white;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    @media only screen and (max-width: 56.25em){
+        margin: 2rem;
+    }
+
+    &__picture{
+        height: 27rem;
+        background-size: cover;
+        background-position: center;
+        &--1{
+            background-image: url(../img/house-1.jpeg);
+        }
+
+        &--2{
+            background-image: url(../img/house-2.jpeg);
+        }
+
+        &--3{
+            background-image: url(../img/house-3.jpeg);
+        }
+    }
+
+    &__heading{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        font-weight: 700;
+    }
+
+    // &__content-box{
+    // }
+
+    &__icon{
+        width: 3rem;
+        height: 3rem;
+        fill: blue;
+    }
+
+    &__content{
+        font-size: 1.2rem;
+    }
+}

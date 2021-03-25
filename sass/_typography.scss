@@ -1,0 +1,23 @@
+body{
+    font-family: Open Sans,sans-serif;
+    line-height: 1.7;
+    color: $color-dark;
+}
+
+.heading-secondary{
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: .2rem;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom:0;
+        right:0;
+        height: 2px;
+        width: 100%;
+        border-bottom: 3px solid sandybrown;
+    }
+}   
